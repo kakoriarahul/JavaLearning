@@ -9,8 +9,16 @@ public class factorial {
         System.out.println("Factorial of " + num + " = " + fact);
 	}
 	public static long factorial(int num){
+		
     	if (num >= 1)
-    		return num * factorial(num - 1);
+    	{
+    		long fac = 1;
+    		for (int i = 1 ; i <= num ; i++) {
+    			fac = fac * i;
+    			
+    		}
+    		return fac;
+    	}
     	else
     		return 1;
     	}
