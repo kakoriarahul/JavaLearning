@@ -5,16 +5,15 @@ import java.util.*;
 public class max2FuncOverload {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		double a = sc.nextDouble();
-		double b =  sc.nextDouble();
-//		int a = sc.nextInt();
-//		int b = sc.nextInt();
 		
-		double res = maxNum(a,b);
+		
+		
+		double res = maxNum(5,3);
+		double res1 = maxNum(5.5,3.9);
 		System.out.println("The maximum number is "+ res);
+		System.out.println("The maximum number is "+ res1);
 	}
-	public static int maxNum(int x, int y) {
+	public static double maxNum(int x, int y) {
 		if (x >= y) {
 			return x;
 		}

@@ -1,5 +1,7 @@
 package basics;
 
+import util.XUtilHelper;
+
 public class zeroBasePerm {
 
 	public static void main(String[] args) {
@@ -9,9 +11,7 @@ public class zeroBasePerm {
 		for (int i = 0 ; i<n;i++) {
 			newArr[i]= arr[arr[i]];
 		}
-		for(int i=0;i<n;i++) {
-			System.out.println(newArr[i]);
-		}
+		XUtilHelper.printIDArray(newArr);
 	}
 
 }
